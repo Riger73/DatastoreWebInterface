@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Report Form</title>
+    </head>
+    {% block styles %}
+    {{super()}}
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    {% endblock %}
+    
+    {% block title %}MAPS Index{% endblock %}
+    
+    {% block content %}
+        <h1>Medical Appointment System</h1>
+        <div class="list-group" style="margin-top: 32px">
+            <a href="/user" class="list-group-item list-group-item-action">User Login</a>
+        </div>
+    {% endblock %}
